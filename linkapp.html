@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finetech | Comece Agora</title>
+    
+     
+    <link rel="stylesheet" href="form.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header id="header">
+        <a href="index.html" class="logo">Finetech</a>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Voltar para o Início</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="form-main">
+    <section class="form-container fade-in">
+        <h1>Defina Sua Jornada Financeira</h1>
+        <p class="form-subtitle">Conte-nos sobre seus objetivos para que possamos construir o plano ideal e enviar a proposta para sua empresa.</p>
+
+        <form id="metaForm">
+            
+            <div class="input-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+            </div>
+            
+            <div class="input-group">
+                <label for="empresa">Nome da Empresa:</label>
+                <input type="text" id="empresa" name="empresa" required placeholder="Nome da sua startup/negócio">
+            </div>
+            
+            <div class="input-group">
+                <label for="email">E-mail Corporativo (Para receber a proposta):</label>
+                <input type="email" id="email" name="email" required placeholder="contato@suaempresa.com.br">
+            </div>
+
+            <div class="input-group">
+                <label for="contato">Número de Contato (WhatsApp, com DDD):</label>
+                <input type="tel" id="contato" name="contato" required placeholder="(XX) 99999-9999">
+            </div>
+
+            <h2>Quais são suas principais metas financeiras digitais?</h2>
+
+            <div class="input-group">
+                <label for="metas">Descreva seus 3 principais objetivos (Ex: Reduzir dívidas, otimizar investimentos, melhorar fluxo de caixa, etc.):</label>
+                <textarea id="metas" name="metas" rows="5" required placeholder="Nossas metas são..."></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="urgencia">Qual a urgência para iniciar essa solução?</label>
+                <select id="urgencia" name="urgencia" required>
+                    <option value="" disabled selected>Selecione uma opção de prioridade</option> 
+                    <option value="imediato">Imediato (Próximos 30 dias)</option>
+                    <option value="curto">Curto Prazo (1 a 3 meses)</option>
+                    <option value="medio">Médio Prazo (4 a 6 meses)</option>
+                </select>
+            </div>
+
+            <button type="submit" class="cta-button large submit-button"> Enviar </button>
+            <p class="politica-privacidade">Ao enviar, você concorda com nossa <a href="#">Política de Privacidade</a>.</p>
+        </form>
+    </section>
+</main>
+
+    <script src="form.js"></script> </body>
+</html>
