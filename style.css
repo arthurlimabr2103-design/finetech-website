@@ -108,18 +108,16 @@ a {
     margin-bottom: 30px;
 }
 
-
-/* No seu style.css, adicione ou ajuste esta classe */
 .hero-mockup-image {
     width: 100%;
-    max-width: 900px; /* Aumentei o max-width para a imagem ter um bom destaque */
+    max-width: 900px; 
     height: auto;
     margin-top: 40px;
     border-radius: 10px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-    display: block; /* Garante que a imagem se comporte como um bloco para margin auto */
-    margin-left: auto; /* Centraliza a imagem */
-    margin-right: auto; /* Centraliza a imagem */
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 
@@ -395,9 +393,6 @@ textarea {
     }
 }
 
-/* ==================================== */
-/* 2. ESTILOS ADICIONAIS PARA RESULTADOS */
-/* ==================================== */
 
 .active-page {
     border-bottom: 2px solid var(--cor-secundaria, #F23207); 
@@ -506,31 +501,31 @@ textarea {
     }
 }
 
-/* Estilizando o Placeholder de Mockup */
+
 .mockup-image {
     width: 100%;
-    max-width: 350px; /* Reduzi um pouco para ficar mais parecido com um telefone */
-    height: 550px; /* Aumentei a altura para simular o aspecto vertical de um app */
+    max-width: 350px; 
+    height: 550px; 
     
-    /* Novo Estilo: Simulação de Aparelho */
-    background-color: #f7f9fc; /* Cor da tela interna (clara) */
-    border: 15px solid #333; /* Simula a moldura do aparelho (corpo do telefone) */
-    border-radius: 40px; /* Borda arredondada do aparelho */
+ 
+    background-color: #f7f9fc; 
+    border: 15px solid #333; 
+    border-radius: 40px; 
     
     margin-top: 40px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Sombra mais forte para destacar */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); 
     
-    /* Simulação de Conteúdo na Tela */
+
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Conteúdo no topo */
+    justify-content: flex-start; 
     align-items: center;
     padding: 10px;
     position: relative;
-    overflow: hidden; /* Para garantir que o conteúdo simulado não vaze */
+    overflow: hidden; 
 }
 
-/* Criando o Conteúdo Fictício da Tela do App */
+
 .mockup-image::before {
     content: "Saldo: R$ 4.580,21";
     font-family: 'DM Sans', sans-serif;
@@ -548,15 +543,15 @@ textarea {
     content: "Gráfico de Gastos (Ago)";
     font-family: 'DM Sans', sans-serif;
     font-size: 0.9em;
-    color: #F23207; /* Cor de destaque */
+    color: #F23207; 
     background-color: #fce4e4;
     border-radius: 6px;
     padding: 8px 15px;
 }
 
-/* Ponto de melhoria de UX: Pequena barra no topo para simular o notch */
+
 .mockup-image::after {
-    /* ... (Mantenha o conteúdo anterior) */
+
     position: absolute;
     top: 0;
     left: 50%;
@@ -566,12 +561,12 @@ textarea {
     background-color: #333;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    content: ""; /* Precisa esvaziar o content do after para usar o before para o saldo */
+    content: "";
     font-size: 0;
     padding: 0;
 }
 
-/* Novo: Reusando o ::before para a barra de notificação/saldo */
+
 .mockup-image::before {
     content: "Finetech | R$ 4.580,21";
     font-family: 'DM Sans', sans-serif;
@@ -579,16 +574,15 @@ textarea {
     font-weight: 700;
     color: #021859;
     padding: 15px 0 0 0; 
-    margin-top: 20px; /* Desce um pouco para o topo */
+    margin-top: 20px; 
     width: 90%;
     text-align: center;
     position: absolute;
     top: 0;
 }
-/* Reajuste, pois a estilização com ::before e ::after pode ser complexa e não é o foco. */
-/* Mantenha o estilo inicial mais simples: */
 
-/* Estilo Simplificado para o Mockup */
+
+
 .mockup-image {
     width: 100%;
     max-width: 350px;
@@ -598,14 +592,14 @@ textarea {
     border-radius: 40px; 
     margin-top: 40px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); 
-    /* Adiciona uma linha simulando um gráfico */
+
     background-image: linear-gradient(to top right, #0460D9, #F23207); 
     background-size: 100% 50%;
     background-repeat: no-repeat;
     background-position: bottom;
     padding-top: 20px;
     
-    /* Adiciona um texto simples */
+
     color: white;
     font-size: 1.5em;
     font-family: 'DM Sans', sans-serif;
@@ -615,20 +609,19 @@ textarea {
     align-items: flex-start;
 }
 
-/* Estilizando o Placeholder de Dashboard (PowerBI) */
 #powerbi .dashboard-mockups {
     width: 100%;
     max-width: 1100px;
-    height: 450px; /* Tamanho razoável para um dashboard de desktop */
+    height: 450px; 
     margin: 40px auto 0;
-    background-color: #1a2a6b; /* Fundo levemente mais claro que o #021859 */
+    background-color: #1a2a6b; 
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     
-    /* Simulação de Conteúdo: Gráficos e Dados */
+
     padding: 20px;
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Duas colunas, uma maior para gráficos */
+    grid-template-columns: 2fr 1fr; 
     gap: 15px;
 }
 
@@ -636,7 +629,7 @@ textarea {
     background-color: white;
     border-radius: 8px;
     padding: 15px;
-    /* Simulação de Gráfico de Linha */
+
     background-image: 
         repeating-linear-gradient(to top, #ccc 0 1px, transparent 1px 50px), 
         linear-gradient(to right, #0460D9 0% 30%, #F23207 30% 60%, #17b978 60% 100%);
@@ -682,9 +675,6 @@ textarea {
     }
 }
 
-/* ==================================== */
-/* 5. REFINAMENTOS DE DESIGN E CORES */
-/* ==================================== */
 
 
 #header {
@@ -702,7 +692,7 @@ body {
     opacity: 0.9;
 }
 
-/* Reforçando o botão principal de CTA */
+
 .cta-button.large {
     box-shadow: 0 5px 15px rgba(242, 50, 7, 0.4); 
     transition: all 0.3s ease;
@@ -716,16 +706,11 @@ footer p {
     line-height: 1.5;
 }
 
-/* ==================================== */
-/* 4. PÁGINA CLIENTES (RESULTADOS.HTML) */
-/* ==================================== */
-
-/* Estilos para a navegação (destaque na página atual) */
 .active-page {
     border-bottom: 2px solid #F23207; 
 }
 
-/* SEÇÃO DE MÉTRICAS (METRICS) */
+
 .metrics-grid {
     display: flex;
     justify-content: space-around;
@@ -746,7 +731,7 @@ footer p {
 .metric-number {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3.5em;
-    color: #0460D9; /* Azul de destaque */
+    color: #0460D9; 
     display: block;
     margin-bottom: 5px;
 }
@@ -757,7 +742,7 @@ footer p {
     color: #333;
 }
 
-/* SEÇÃO DE TESTEMUNHOS (TESTIMONIALS) */
+
 .testimonial-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -790,7 +775,7 @@ footer p {
     padding-top: 15px;
 }
 
-/* SEÇÃO DE CLIENTES (CLIENTS) - Logos */
+
 .logo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -814,69 +799,62 @@ footer p {
 }
 
 
-/* ==================================== */
-/* 5. MOCKUPS E REFINAMENTO DE DESIGN */
-/* ==================================== */
-
-/* ... (Mantenha o CSS da hero-mockup-image e outros elementos aqui) ... */
-
-/* Estilos para o Wrapper do PowerBI (Contêiner da Imagem e Overlay) */
 .powerbi-wrapper {
-    position: relative; /* Essencial para posicionar o overlay */
+    position: relative; 
     width: 100%;
-    max-width: 1100px; /* Mesma largura do placeholder anterior */
+    max-width: 1100px; 
     margin: 40px auto 0;
-    border-radius: 12px; /* Cantos arredondados */
-    overflow: hidden; /* Garante que o conteúdo não vaze */
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4); /* Sombra mais profunda para destacar */
-    transition: all 0.5s ease; /* Transição suave para o efeito de hover */
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4); 
+    transition: all 0.5s ease; 
 }
 
-/* Animação de Sutil Movimento (para dar a sensação de "vivo") */
+
 .powerbi-wrapper:hover {
-    transform: translateY(-5px); /* Levanta levemente ao passar o mouse */
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6); /* Sombra mais intensa */
+    transform: translateY(-5px); 
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6); 
 }
 
-/* Estilo para a Imagem Real do Dashboard PowerBI */
+
 .powerbi-dashboard-image {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 12px; /* Garante que a imagem tenha os cantos arredondados do wrapper */
-    transition: filter 0.5s ease; /* Transição para o efeito de blur */
+    border-radius: 12px; 
+    transition: filter 0.5s ease; 
 }
 
-/* Overlay Interativo (Camada por cima da imagem) */
+
 .powerbi-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(2, 24, 89, 0.8); /* Azul marinho com transparência */
+    background-color: rgba(2, 24, 89, 0.8); 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Começa invisível */
-    transition: opacity 0.5s ease; /* Transição suave para aparecer */
-    border-radius: 12px; /* Canto arredondado igual ao wrapper */
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    border-radius: 12px; 
     text-align: center;
 }
 
 .powerbi-overlay p {
     color: white;
-    font-size: 1.6em; /* Texto maior e mais convidativo */
+    font-size: 1.6em; 
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-/* Botão de Demonstração dentro do Overlay */
+
 .cta-button.small-button {
     font-size: 1.1em;
     padding: 10px 25px;
-    background-color: #F23207; /* Laranja vibrante */
+    background-color: #F23207; 
     color: white;
     border-radius: 6px;
     transition: background-color 0.3s ease;
@@ -889,25 +867,20 @@ footer p {
 }
 
 
-/* Efeito de Hover: Aparecer Overlay e Focar a Imagem */
+
 .powerbi-wrapper:hover .powerbi-overlay {
-    opacity: 1; /* Torna o overlay visível */
+    opacity: 1; 
 }
 
 .powerbi-wrapper:hover .powerbi-dashboard-image {
-    filter: brightness(0.7) blur(2px); /* Escurece e borra a imagem por baixo */
+    filter: brightness(0.7) blur(2px); 
 }
 
-
-
-/* ==================================== */
-/* 6. REFINAMENTO DO FORMULÁRIO (linkapp.html) */
-/* ==================================== */
 
 .form-main {
     display: flex;
     justify-content: center;
-    align-items: center; /* ALINHAMENTO VERTICAL CENTRALIZADO */
+    align-items: center; 
     padding: 80px 5%;
     min-height: calc(100vh - 80px); 
     background-color: #f7f9fc; 
@@ -918,27 +891,25 @@ footer p {
     margin-bottom: 0px; 
 }
 
-/* Refinamento dos Inputs */
+
 input[type="text"], 
 input[type="email"], 
 input[type="tel"], 
 textarea,
 select {
-    font-weight: 500; /* Texto digitado mais forte */
+    font-weight: 500; 
 }
 
-/* Melhoria no Estilo da Label */
+
 .input-group label {
     font-size: 0.95em; 
     opacity: 0.8;
 }
 
-/* ==================================== */
-/* 7. RESPONSIVIDADE ADICIONAL */
-/* ==================================== */
+
 
 @media (max-width: 768px) {
-    /* Ajuste para o grid de resultados */
+  
     .metrics-grid {
         flex-direction: column;
         gap: 30px;
@@ -952,7 +923,7 @@ select {
         grid-template-columns: repeat(2, 1fr); 
     }
     
-    /* Ajuste para o dashboard em mobile */
+   
     #powerbi .dashboard-mockups {
         height: 350px;
         grid-template-columns: 1fr; 
@@ -985,28 +956,26 @@ select {
 }
 
 
-/* ==================================== */
-/* 8. LIGHTBOX / MODAL DASHBOARD */
-/* ==================================== */
+
 
 .modal-lightbox {
-    display: none; /* Inicia escondido */
-    position: fixed; /* Fixado na tela */
-    z-index: 1000; /* Acima de todo o resto */
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto; 
-    background-color: rgba(2, 24, 89, 0.95); /* Azul Marinho com alta transparência */
+    background-color: rgba(2, 24, 89, 0.95); 
     animation: fadeInModal 0.3s;
 }
 
 .modal-content {
-    margin: 5% auto; /* Centraliza verticalmente */
+    margin: 5% auto; 
     padding: 20px;
     width: 90%; 
-    max-width: 1400px; /* Define o tamanho máximo para a imagem */
+    max-width: 1400px; 
     position: relative;
     text-align: center;
 }
@@ -1015,13 +984,13 @@ select {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5); /* Sombra pesada para destacar */
-    animation: zoomIn 0.5s; /* Animação ao aparecer */
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5); 
+    animation: zoomIn 0.5s; 
 }
 
-/* Botão de Fechar (o 'X') */
+
 .modal-close {
-    color: #f7f9fc; /* Cor branca para contraste */
+    color: #f7f9fc; 
     font-size: 40px;
     font-weight: bold;
     position: absolute;
@@ -1035,13 +1004,13 @@ select {
 
 .modal-close:hover,
 .modal-close:focus {
-    color: #F23207; /* Cor de destaque */
+    color: #F23207; 
     text-decoration: none;
     cursor: pointer;
     opacity: 1;
 }
 
-/* Animações CSS para o Modal */
+
 @keyframes fadeInModal {
     from {opacity: 0}
     to {opacity: 1}
@@ -1051,4 +1020,5 @@ select {
     from {transform: scale(0.95); opacity: 0.5;}
     to {transform: scale(1); opacity: 1;}
 }
+
 
