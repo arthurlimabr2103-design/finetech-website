@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const animatedElements = document.querySelectorAll('.fade-in, .slide-up, .slide-up-slow');
 
     const observerOptions = {
-        root: null, // viewport
+        root: null, 
         rootMargin: '0px',
         threshold: 0.2 // 
     };
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Se o elemento está visível
+    
                 entry.target.classList.add('animated');
                 observer.unobserve(entry.target); 
             }
@@ -88,17 +88,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    // LÓGICA DO MODAL/LIGHTBOX DO DASHBOARD
+
     const modal = document.getElementById('dashboard-modal');
     const btn = document.getElementById('open-dashboard-btn');
     const closeButton = document.getElementsByClassName('modal-close')[0];
 
     if (btn && modal && closeButton) {
-        // 1. Abre o modal ao clicar no botão
+
         btn.onclick = function(e) {
-            e.preventDefault(); // Impede que a página volte para o topo
+            e.preventDefault(); 
             modal.style.display = "block";
-            // Adiciona uma classe ao body para evitar que a página de fundo role
+  
             document.body.style.overflow = 'hidden'; 
         }
 
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.style.overflow = 'auto'; 
         }
 
-        // 3. Fecha o modal ao clicar fora da imagem
+
         window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
@@ -116,4 +116,5 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     }
+
 });
